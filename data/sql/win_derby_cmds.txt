@@ -1,0 +1,5 @@
+set DERBY_HOME="C:\Program Files\db-derby-10.15.2.0-bin"
+set PATH=%DERBY_HOME%\bin;%PATH%
+java -jar %DERBY_HOME%\lib\derbyrun.jar ij
+CONNECT 'jdbc:derby:filmlistdb';
+CREATE TABLE film_list (title varchar(255), directors varchar(255), year_released int, genre varchar(255), rating varchar(50));
